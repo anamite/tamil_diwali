@@ -88,7 +88,7 @@ function App() {
                   alt="Deepavali Celebration Poster" 
                   className="w-full h-auto object-contain"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://i.ibb.co/nsQLjW4m/poster.png';
+                    (e.target as HTMLImageElement).src = 'https://sendwithses-855401425151-1707894036997510955-us-east-1.s3.amazonaws.com/opensource/1758189086881103856.png';
                   }}
                 />
               </div>
