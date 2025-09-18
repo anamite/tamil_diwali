@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MapPin, Calendar, Users, Music, Utensils, Gamepad2, Sparkles } from 'lucide-react';
+import { Calendar, Users, Music, Utensils, Gamepad2, Sparkles } from 'lucide-react';
 
 function App() {
   const [mounted, setMounted] = useState(false);
@@ -52,24 +52,27 @@ function App() {
         {/* Header */}
         <header className="text-center pt-8 pb-4 px-4">
           <div className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 bg-clip-text text-transparent">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 animate-pulse">
-              தீபாவளி விழா
+            <h1 className="text-2xl md:text-3xl font-bold mb-2">
+              Ingolstadt Tamilargal
             </h1>
-            <h2 className="text-2xl md:text-4xl font-semibold mb-4">
-              Tamil Deepavali Celebration
+            <h2 className="text-lg md:text-xl font-medium mb-2">
+              presents
             </h2>
+            <h3 className="text-3xl md:text-5xl font-bold mb-4 animate-pulse">
+              Tamil Deepavali Celebration 2025
+            </h3>
           </div>
           
           <div className="flex items-center justify-center gap-2 text-yellow-200 mb-2">
             <Calendar className="w-5 h-5" />
-            <span className="text-lg md:text-xl font-medium">October 19th, 2025</span>
+            <span className="text-lg md:text-xl font-medium">October 19th, 2025 (Sunday)</span>
           </div>
           
           <div className="flex items-center justify-center gap-2 text-orange-200">
-            <MapPin className="w-4 h-4" />
+            <img src="maps.png" alt="Location" className="w-4 h-6" />
             <button 
               onClick={() => window.open('https://maps.google.com/?q=Kultur+Zentrum+NEun+Ingolstadt', '_blank')}
-              className="text-sm md:text-base hover:text-yellow-300 hover:underline transition-colors duration-200 cursor-pointer"
+              className="text-sm md:text-base text-yellow-200 underline hover:text-yellow-300 hover:no-underline transition-all duration-200 cursor-pointer"
             >
               Kultur Zentrum Neun, Ingolstadt
             </button>
