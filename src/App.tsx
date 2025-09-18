@@ -62,7 +62,7 @@ function App() {
           
           <div className="flex items-center justify-center gap-2 text-yellow-200 mb-2">
             <Calendar className="w-5 h-5" />
-            <span className="text-lg md:text-xl font-medium">October 18th, 2024</span>
+            <span className="text-lg md:text-xl font-medium">October 19th, 2025</span>
           </div>
           
           <div className="flex items-center justify-center gap-2 text-orange-200">
