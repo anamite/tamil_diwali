@@ -123,7 +123,7 @@ function App() {
                 {/* Action buttons */}
                 <div className="flex flex-col gap-4 items-center">
                   <button 
-                    onClick={() => window.open('#register', '_blank')}
+                    onClick={() => window.open('https://www.cognitoforms.com/ingolstadttamizhargal/deepavalikondattam2025', '_blank')}
                     className="group relative px-8 py-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full max-w-xs border-2 border-transparent hover:border-yellow-300 hover:shadow-yellow-400/50"
                   >
                     <span className="relative z-10">🎟️ Register Now</span>
