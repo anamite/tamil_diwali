@@ -52,16 +52,16 @@ function App() {
         {/* Header */}
         <header className="text-center pt-8 pb-4 px-4">
           <div className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 bg-clip-text text-transparent">
-            <h1 className="text-2xl md:text-3xl font-bold mb-2">
+            <h1 className="text-2xl md:text-3xl font-bold mb-2 text-yellow-300">
               Ingolstadt Tamilargal
             </h1>
-            <h2 className="text-lg md:text-xl font-medium mb-2">
+            <h2 className="text-lg md:text-xl font-medium mb-2 text-orange-300">
               presents
             </h2>
-            <h3 className="text-3xl md:text-5xl font-bold mb-4 animate-pulse">
-              Tamil Deepavali Celebration 2025
-            </h3>
           </div>
+          <h3 className="text-3xl md:text-5xl font-bold mb-4 animate-pulse text-yellow-300">
+            Tamil Deepavali Celebration 2025
+          </h3>
           
           <div className="flex items-center justify-center gap-2 text-yellow-200 mb-2">
             <Calendar className="w-5 h-5" />
@@ -69,9 +69,9 @@ function App() {
           </div>
           
           <div className="flex items-center justify-center gap-2 text-orange-200">
-            <img src="maps.png" alt="Location" className="w-4 h-6" />
+            <img src="https://sendwithses-855401425151-1707894036997510955-us-east-1.s3.amazonaws.com/opensource/1758191641095937690.png" alt="Location" className="w-4 h-6" />
             <button 
-              onClick={() => window.open('https://maps.google.com/?q=Kultur+Zentrum+NEun+Ingolstadt', '_blank')}
+              onClick={() => window.open('https://maps.google.com/?q=Kultur+Zentrum+Neun+Ingolstadt', '_blank')}
               className="text-sm md:text-base text-yellow-200 underline hover:text-yellow-300 hover:no-underline transition-all duration-200 cursor-pointer"
             >
               Kultur Zentrum Neun, Ingolstadt
