@@ -84,7 +84,7 @@ function App() {
             <div className="mb-8 lg:mb-0 flex justify-center lg:w-1/2">
               <div className="w-full max-w-md lg:max-w-none">
                 <img 
-                  src="/poster.png" 
+                  src="poster.png" 
                   alt="Deepavali Celebration Poster" 
                   className="w-full h-auto object-contain"
                   onError={(e) => {
