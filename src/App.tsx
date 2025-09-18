@@ -98,40 +98,133 @@ function App() {
             </div>
 
             {/* Event details */}
-            <div className="lg:w-1/2 flex justify-center lg:justify-start">
-              <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-yellow-500/30 w-full max-w-md">
-                <h3 className="text-2xl md:text-3xl font-bold text-yellow-300 mb-6 text-center">
-                  🪔 Festival of Lights 🪔
-                </h3>
-                
-                <div className="space-y-5 mb-8">
-                  <div className="flex items-center gap-4 text-orange-200">
-                    <Utensils className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                    <span className="text-lg font-medium">Biriyani Feast</span>
+            <div className="lg:w-1/2 flex flex-col gap-8">
+              {/* Event details box */}
+              <div className="flex justify-center lg:justify-start">
+                <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-yellow-500/30 w-full max-w-md">
+                  <h3 className="text-2xl md:text-3xl font-bold text-yellow-300 mb-6 text-center">
+                    🪔 Festival of Lights 🪔
+                  </h3>
+                  
+                  <div className="space-y-5 mb-8">
+                    <div className="flex items-center gap-4 text-orange-200">
+                      <Utensils className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                      <span className="text-lg font-medium">Biriyani Feast</span>
+                    </div>
+                    <div className="flex items-center gap-4 text-orange-200">
+                      <Users className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                      <span className="text-lg font-medium">Cultural Performances</span>
+                    </div>
+                    <div className="flex items-center gap-4 text-orange-200">
+                      <Gamepad2 className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                      <span className="text-lg font-medium">Traditional Games</span>
+                    </div>
+                    <div className="flex items-center gap-4 text-orange-200">
+                      <Music className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                      <span className="text-lg font-medium">DJ & Music</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-4 text-orange-200">
-                    <Users className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                    <span className="text-lg font-medium">Cultural Performances</span>
-                  </div>
-                  <div className="flex items-center gap-4 text-orange-200">
-                    <Gamepad2 className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                    <span className="text-lg font-medium">Traditional Games</span>
-                  </div>
-                  <div className="flex items-center gap-4 text-orange-200">
-                    <Music className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                    <span className="text-lg font-medium">DJ & Music</span>
+
+                  {/* Action buttons */}
+                  <div className="flex flex-col gap-4 items-center">
+                    <button 
+                      onClick={() => window.open('https://www.cognitoforms.com/ingolstadttamizhargal/deepavalikondattam2025', '_blank')}
+                      className="group relative px-8 py-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full max-w-xs border-2 border-transparent hover:border-yellow-300 hover:shadow-yellow-400/50"
+                    >
+                      <span className="relative z-10">🎟️ Register Now</span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    </button>
                   </div>
                 </div>
+              </div>
 
-                {/* Action buttons */}
-                <div className="flex flex-col gap-4 items-center">
-                  <button 
-                    onClick={() => window.open('https://www.cognitoforms.com/ingolstadttamizhargal/deepavalikondattam2025', '_blank')}
-                    className="group relative px-8 py-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full max-w-xs border-2 border-transparent hover:border-yellow-300 hover:shadow-yellow-400/50"
-                  >
-                    <span className="relative z-10">🎟️ Register Now</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                  </button>
+              {/* Menu section */}
+              <div className="flex justify-center lg:justify-start">
+                <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-yellow-500/30 w-full max-w-md">
+                  <h3 className="text-2xl md:text-3xl font-bold text-yellow-300 mb-6 text-center">
+                    🍽️ Menu 🍽️
+                  </h3>
+                  
+                  <div className="space-y-6">
+                    {/* Non-Vegetarian */}
+                    <div>
+                      <h4 className="text-lg font-semibold text-orange-300 mb-3">Non-Vegetarian</h4>
+                      <ul className="space-y-2 text-orange-200">
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Chicken Biriyani
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Chicken 65 (Boneless)
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    {/* Vegetarian */}
+                    <div>
+                      <h4 className="text-lg font-semibold text-orange-300 mb-3">Vegetarian</h4>
+                      <ul className="space-y-2 text-orange-200">
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Veg Biriyani
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Cauliflower Fry
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Accompaniments */}
+                    <div>
+                      <h4 className="text-lg font-semibold text-orange-300 mb-3">Accompaniments</h4>
+                      <ul className="space-y-2 text-orange-200">
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Plain Rice
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Dal Curry
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Sambar
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Rasam
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Raita
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    {/* Dessert */}
+                    <div>
+                      <h4 className="text-lg font-semibold text-orange-300 mb-3">Dessert</h4>
+                      <ul className="space-y-2 text-orange-200">
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Gulab Jamun
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    {/* Evening Snack */}
+                    <div>
+                      <h4 className="text-lg font-semibold text-orange-300 mb-3">Evening Snack</h4>
+                      <ul className="space-y-2 text-orange-200">
+                        <li className="flex items-center gap-2">
+                          <span className="text-yellow-400">•</span>
+                          Tea - Parupu Vadai
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
