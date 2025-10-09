@@ -69,7 +69,7 @@ function App() {
           </div>
           
           <div className="flex items-center justify-center gap-2 text-orange-200">
-            <img src="https://sendwithses-855401425151-1707894036997510955-us-east-1.s3.amazonaws.com/opensource/1758191641095937690.png" alt="Location" className="w-4 h-6" />
+            <img src="maps.png" alt="Location" className="w-4 h-6" />
             <button 
               onClick={() => window.open('https://maps.google.com/?q=Kultur+Zentrum+Neun+Ingolstadt', '_blank')}
               className="text-sm md:text-base text-yellow-200 underline hover:text-yellow-300 hover:no-underline transition-all duration-200 cursor-pointer"
@@ -91,7 +91,7 @@ function App() {
                   alt="Deepavali Celebration Poster" 
                   className="w-full h-auto object-contain"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://sendwithses-855401425151-1707894036997510955-us-east-1.s3.amazonaws.com/opensource/1758189086881103856.png';
+                    (e.target as HTMLImageElement).src = 'poster.png';
                   }}
                 />
               </div>
@@ -246,3 +246,4 @@ function App() {
 }
 
 export default App;
+
